@@ -1,0 +1,162 @@
+*{
+  list-style: none;
+  
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body{
+  background-color: #7360DF;
+}
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.todo-container{
+  background-color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 8% auto;
+ 
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ 
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-container{
+   height: 20px;
+ 
+  padding: 10px;
+}
+.todo-textfield{
+  width: 350px;
+border: none;
+padding: 15px;
+border: 1px solid black;
+}
+
+.remove-item{
+  text-decoration: line-through;
+  color: black;
+  
+}
+.todo-button{
+  width: 60px;
+  height: 40px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: #7360DF;
+  cursor: pointer;
+}
+.todo_button{
+  width: 30px;
+  height: 40px;
+color: #ffff;
+  border: none;
+  cursor: pointer;
+}
+.displayItem{
+  padding: 20px;
+  align-self: start;
+ width: 750px;
+  height: 500px;
+overflow: scroll;
+  
+}
+.todo-items-list{
+  display: flex;
+
+ 
+ }
+ .myBtns{
+  
+  
+
+  width: 200px;
+  margin: 10px;
+ }
+ .EditBtn{
+  font-size: 25px;
+  padding: 10px;
+  color: #7360DF
+ }
+ .EditBtn:hover{
+  font-size: 30px;
+  cursor: pointer;
+  color: red
+ }
+ .DeleteBtn{
+  font-size: 25px;
+  padding: 10px;
+  color: #7360DF
+ }
+ .DeleteBtn:hover{
+  font-size: 30px;
+  cursor: pointer;
+  color: red
+ }
+.todo-items-list .my-items{
+  width: 400px;
+  margin: 15px;
+  height: 35px;
+  text-align: justify;
+
+}
+.todo-items-list .remove_icon{
+margin-top: 5px;
+font-size: 25px;
+padding: 10px;
+color: #7360DF
+}
+.remove_icon:hover{
+  cursor: pointer;
+  color: red;
+  font-size: 30px;
+}
+.todo_item_info{
+  display: flex;
+  gap:20px;
+  margin: 10px;
+}
+.EditForm{
+  display: none;
+  z-index: 1000;
+}
+.EditForm .view{
+display: block;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
