@@ -1,6 +1,6 @@
 import { CiCircleRemove } from "react-icons/ci";
 import { MdDelete ,MdEdit} from "react-icons/md";
-export default function TodoDisplay({data, onRemoveHandler, onDeleteHandler}){
+export default function TodoDisplay({data, onRemoveHandler, onDeleteHandler, onEditHandler}){
    
     return(
         <div className="displayItem">
@@ -14,7 +14,7 @@ export default function TodoDisplay({data, onRemoveHandler, onDeleteHandler}){
                 </div>
                 <div className="myBtns">
                 <CiCircleRemove  className="remove_icon" onClick={()=>onRemoveHandler(item.id)}/>
-                <MdEdit className="EditBtn"/>
+                <MdEdit className="EditBtn" onClick={()=>onEditHandler(item.id)}/>
                 <MdDelete className="DeleteBtn" onClick={()=>onDeleteHandler(item.id)}/>
                 </div>
                 

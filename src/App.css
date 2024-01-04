@@ -145,12 +145,39 @@ color: #7360DF
   gap:20px;
   margin: 10px;
 }
-.EditForm{
+.hideEditForm{
   display: none;
   z-index: 1000;
 }
-.EditForm .view{
-display: block;
+.showEditForm{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.card{
+  position: relative;
+  width: 500px;
+  height: 200px;
+  margin: 8% auto;
+  padding: 20px;
+  display: flex;
+  background-color: white;
+}
+.card .text-container{
+  margin-top: 20px;
+}
+.closeIcon{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+.closeIcon:hover{
+  color: red;
 }
 @keyframes App-logo-spin {
   from {

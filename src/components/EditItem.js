@@ -1,9 +1,14 @@
-import TodoTextField from "./todo_textfield";
 
-export default function EditItem({children}){
+import { GrClose } from "react-icons/gr";
+export default function EditItem({children, editFormClassName, closeClick}){
     return (
-        <div className="EditForm">
+        <div className={editFormClassName}>
+            <div className="card">
+            <GrClose onClick={closeClick} className="closeIcon"/>
+           
             {children}
+            </div>
+           
         </div>
     );
 }
