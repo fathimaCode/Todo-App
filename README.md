@@ -5,3 +5,4 @@ Screen shot
 # code is deployed in the git hub
 https://fathimacode.github.io/react_learning_repo/
 
+![Uploading sample.gif…]()
